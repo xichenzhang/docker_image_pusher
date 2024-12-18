@@ -16,5 +16,6 @@ prom/prometheus:v2.40.1
 grafana/grafana:9.2.4
 apache/shardingsphere-proxy:5.4.0
 nacos:2.3.2
+nacos/nacos-server:latest
 #支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
