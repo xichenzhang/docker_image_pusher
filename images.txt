@@ -18,3 +18,4 @@ apache/shardingsphere-proxy:5.4.0
 nacos/nacos-server:2.4.3
 #支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
+wordpress:latest
