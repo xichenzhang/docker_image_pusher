@@ -15,7 +15,7 @@ apache/skywalking-oap-server:9.7.0
 prom/prometheus:v2.40.1
 grafana/grafana:9.2.4
 apache/shardingsphere-proxy:5.4.0
-nacos/nacos-server:2.4.3
+# nacos/nacos-server:2.4.3
 wordpress:latest
 #支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
