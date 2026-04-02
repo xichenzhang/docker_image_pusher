@@ -19,5 +19,6 @@ apache/shardingsphere-proxy:5.4.0
 wordpress:latest
 redis:7-alpine
 eclipse-temurin:21-jre
+nginx:alpine
 #支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
