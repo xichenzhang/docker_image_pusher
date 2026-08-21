@@ -1,24 +1,21 @@
 #支持私库
-nginx:latest
-nginx:stable-alpine
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
-mysql:8.0.33
-redis:7.0.13
-elasticsearch:7.17.6
-kibana:7.17.6
-logstash:7.17.6
-apache/rocketmq:5.2.0
-apacherocketmq/rocketmq-dashboard:latest
-rabbitmq:3.13.3
-sheepkiller/kafka-manager:latest
-apache/skywalking-oap-server:9.7.0
-prom/prometheus:v2.40.1
-grafana/grafana:9.2.4
-apache/shardingsphere-proxy:5.4.0
-# nacos/nacos-server:2.4.3
-wordpress:latest
-redis:7-alpine
-eclipse-temurin:21-jre
-#支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
+nginx:1.27.0-alpine
+nginx:1.26.2-alpine
+registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.13.0
+xhofe/alist:v3.37.0          # 或 xiaoyaliu/alist:v3.37.0 (如确认arm64)
+mysql:8.0.39
+redis:7.4.0-alpine
+elasticsearch:8.15.0
+kibana:8.15.0
+logstash:8.15.0
+apache/rocketmq:5.2.0        # 若 arm64 不支持，可换用 apache/rocketmq:5.1.4 并自行构建
+apacherocketmq/rocketmq-dashboard:1.0.0
+rabbitmq:3.12.14-management-alpine
+hlebalbau/kafka-manager:3.0.0.5   # 或 bitnami/kafka-manager:3.0.0.5
+apache/skywalking-oap-server:10.1.0
+prom/prometheus:v2.55.0
+grafana/grafana:11.2.0
+apache/shardingsphere-proxy:5.5.0
+wordpress:6.6.1-fpm-alpine
+eclipse-temurin:21.0.4_7-jre-alpine
+--platform=linux/arm64 xiaoyaliu/alist:v3.37.0   # 保留架构指定
